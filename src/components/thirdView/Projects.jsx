@@ -1,5 +1,6 @@
 import { Typography, Grid, Card, CardContent } from "@mui/material";
 import styles from "../../styles/styles";
+import { BsLink } from "react-icons/bs";
 
 const Projects = () => {
   return (
@@ -27,21 +28,51 @@ const Projects = () => {
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>
                 <Card style={{ height: "100%" }}>
-                  <CardContent>
-                    <Typography variant="h4">TMDB</Typography>
+                  <CardContent
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <Typography variant="h4" gutterBottom>
+                      TMDB
+                    </Typography>
                     <Typography variant="body1">
                       Proyecto individual creado en una semana. Aplicación que
                       muestra películas: un usuario puede registrarse, ver un
                       listado de películas y agregar o quitar de favoritos.
                       React, Redux, CSS, PostgreSQL, Express, Sequelize.
                     </Typography>
+                    <a
+                      href="https://github.com/GermanCuevas/Line-up"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                        color: "black",
+                      }}
+                    >
+                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                    </a>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card style={{ height: "100%" }}>
-                  <CardContent>
-                    <Typography variant="h4">The mobile factory</Typography>
+                  <CardContent
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <Typography variant="h4" gutterBottom>
+                      The mobile factory
+                    </Typography>
                     <Typography variant="body1">
                       Proyecto grupal de cinco integrantes creado en dos
                       semanas. Ecommerce de smartphones con registro y carrito.
@@ -49,22 +80,54 @@ const Projects = () => {
                       optimizacion desde el front. React, Redux, Material UI,
                       Node JS, Express, PostgreSQL, Sequelize.
                     </Typography>
+                    <a
+                      href="https://github.com/GermanCuevas/Line-up"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                        color: "black",
+                      }}
+                    >
+                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                    </a>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
                 <Card style={{ height: "100%" }}>
-                  <CardContent>
-                    <Typography variant="h4">Line-Up</Typography>
+                  <CardContent
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      height: "100%",
+                    }}
+                  >
+                    <Typography variant="h4" gutterBottom>
+                      Line-Up
+                    </Typography>
                     <Typography variant="body1">
                       Practica profesional para la empresa CRUCE. Grupo de seis
                       integrantes. Tiempo de desarrollo de un mes. Enero 2021 -
                       Actualidad Es una aplicación web que le permite a sus
                       usuarios reservar turnos online en distintas sucursales.
-                      Responsabilidades: creación de componentes y pages;
-                      estilos generales; validaciones en front y back. NextJS ,
-                      SASS, Material UI , Node JS, Express, MongoDB, Moongose.
+                      NextJS , SASS, Material UI , Node JS, Express, MongoDB,
+                      Moongose.
                     </Typography>
+                    <a
+                      href="https://github.com/GermanCuevas/Line-up"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: "none",
+                        cursor: "pointer",
+                        color: "black",
+                      }}
+                    >
+                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                    </a>
                   </CardContent>
                 </Card>
               </Grid>
