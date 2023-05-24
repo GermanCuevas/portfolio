@@ -22,7 +22,7 @@ const Presentation = () => {
             }}
           >
             <Typography variant="h1" style={styles.colorPrimary}>
-              Soy German
+              Soy Germán
             </Typography>
             <Typography variant="h4" style={styles.colorPrimary}>
               Full Stack Developer
