@@ -1,0 +1,15 @@
+.main-project {
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  background-color: #f8002f;
+  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}

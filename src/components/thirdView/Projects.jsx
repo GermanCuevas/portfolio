@@ -1,24 +1,22 @@
 import { Typography, Grid, Card, CardContent } from "@mui/material";
 import styles from "../../styles/styles";
 import { BsLink } from "react-icons/bs";
+import "./project.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
       <div>
-        <div style={{ height: "100%", width: "100%" }}>
-          <div
-            style={{
-              padding: "20px",
-              height: "100%",
-              textAlign: "center",
-              marginTop: "50px",
-              width: "100%",
-              backgroundColor: "#f8002f",
-              backgroundImage:
-                "linear-gradient(326deg, #f8002f 0%, #000c14 74%)",
-            }}
-          >
+        <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
+          <div className="main-project">
             <Typography
               variant="h1"
               style={{ ...styles.colorPrimary, marginBottom: "20px" }}
@@ -27,15 +25,8 @@ const Projects = () => {
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }}>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      height: "100%",
-                    }}
-                  >
+                <Card style={{ height: "100%" }} data-aos="fade-right">
+                  <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       TMDB
                     </Typography>
@@ -53,23 +44,17 @@ const Projects = () => {
                         textDecoration: "none",
                         cursor: "pointer",
                         color: "black",
+                        marginTop: "auto",
                       }}
                     >
-                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                      <BsLink size={32} />
                     </a>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }}>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      height: "100%",
-                    }}
-                  >
+                <Card style={{ height: "100%" }} data-aos="fade-up">
+                  <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       The mobile factory
                     </Typography>
@@ -88,23 +73,17 @@ const Projects = () => {
                         textDecoration: "none",
                         cursor: "pointer",
                         color: "black",
+                        marginTop: "auto",
                       }}
                     >
-                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                      <BsLink size={32} />
                     </a>
                   </CardContent>
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }}>
-                  <CardContent
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      height: "100%",
-                    }}
-                  >
+                <Card style={{ height: "100%" }} data-aos="fade-left">
+                  <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       Line-Up
                     </Typography>
@@ -124,6 +103,7 @@ const Projects = () => {
                         textDecoration: "none",
                         cursor: "pointer",
                         color: "black",
+                        marginTop: "auto",
                       }}
                     >
                       <BsLink size={32} style={{ marginTop: "auto" }} />

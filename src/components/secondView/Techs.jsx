@@ -12,11 +12,16 @@ import imgNext from "../../assets/nextjs.png";
 import imgNode from "../../assets/node.png";
 import imgPostgre from "../../assets/postgresql-logo.png";
 import imgReact from "../../assets/react.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Presentation() {
   useEffect(() => {
-    setTimeout(() => {});
+    Aos.init({
+      duration: 2500,
+    });
   }, []);
   // eslint-disable-next-line no-unused-vars
   const [arrImg, setArrImg] = useState([
@@ -38,10 +43,15 @@ function Presentation() {
         bgImage={img}
         strength={500}
       >
-        <ImageList sx={{ width: "100%", height: "100vh" }} cols={3}>
+        <ImageList
+          sx={{ width: "100%", height: "100vh", overflow: "hidden" }}
+          cols={3}
+        >
           {arrImg.map((el, idx) => {
             return (
               <ImageListItem
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
                 key={idx}
                 style={{ display: "grid", placeItems: "center" }}
               >
