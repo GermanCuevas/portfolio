@@ -13,3 +13,13 @@
   align-items: center;
   height: 100%;
 }
+#titleProyect {
+  color: white;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 500px) {
+  #titleProyect {
+    font-size: 4rem;
+  }
+}

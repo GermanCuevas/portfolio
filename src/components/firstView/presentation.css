@@ -1,0 +1,17 @@
+.boxParallaxContainer {
+  height: 100vh;
+}
+.boxInfo {
+  text-align: center;
+  width: 100%;
+}
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .boxParallaxContainer {
+    height: 85vh;
+  }
+}

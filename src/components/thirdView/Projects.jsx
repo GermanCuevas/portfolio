@@ -1,31 +1,31 @@
-import { Typography, Grid, Card, CardContent } from "@mui/material";
-import styles from "../../styles/styles";
-import { BsLink } from "react-icons/bs";
-import "./project.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { Typography, Grid, Card, CardContent } from '@mui/material';
+import { BsLink } from 'react-icons/bs';
+import './project.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Projects = () => {
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 2000
     });
   }, []);
   return (
     <>
       <div>
-        <div style={{ height: "100%", width: "100%", overflow: "hidden" }}>
+        <div style={{ height: '100%', width: '100%', overflow: 'hidden' }}>
           <div className="main-project">
             <Typography
               variant="h1"
-              style={{ ...styles.colorPrimary, marginBottom: "20px" }}
+              id="titleProyect"
+              style={{ marginBottom: 20 }}
             >
               Proyectos
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }} data-aos="fade-right">
+                <Card style={{ height: '100%' }} data-aos="fade-right">
                   <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       TMDB
@@ -37,14 +37,14 @@ const Projects = () => {
                       React, Redux, CSS, PostgreSQL, Express, Sequelize.
                     </Typography>
                     <a
-                      href="https://github.com/GermanCuevas/Line-up"
+                      href="https://github.com/GermanCuevas/26-checkpoint-TMDB"
                       target="_blank"
                       rel="noreferrer"
                       style={{
-                        textDecoration: "none",
-                        cursor: "pointer",
-                        color: "black",
-                        marginTop: "auto",
+                        textDecoration: 'none',
+                        cursor: 'pointer',
+                        color: 'black',
+                        marginTop: 'auto'
                       }}
                     >
                       <BsLink size={32} />
@@ -53,7 +53,7 @@ const Projects = () => {
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }} data-aos="fade-up">
+                <Card style={{ height: '100%' }} data-aos="fade-up">
                   <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       The mobile factory
@@ -66,14 +66,14 @@ const Projects = () => {
                       Node JS, Express, PostgreSQL, Sequelize.
                     </Typography>
                     <a
-                      href="https://github.com/GermanCuevas/Line-up"
+                      href="https://the-mobile-factory-1-5284-cnc3grc2m-germancuevas.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                       style={{
-                        textDecoration: "none",
-                        cursor: "pointer",
-                        color: "black",
-                        marginTop: "auto",
+                        textDecoration: 'none',
+                        cursor: 'pointer',
+                        color: 'black',
+                        marginTop: 'auto'
                       }}
                     >
                       <BsLink size={32} />
@@ -82,7 +82,7 @@ const Projects = () => {
                 </Card>
               </Grid>
               <Grid item xs={12} sm={6} md={4}>
-                <Card style={{ height: "100%" }} data-aos="fade-left">
+                <Card style={{ height: '100%' }} data-aos="fade-left">
                   <CardContent className="card-content">
                     <Typography variant="h4" gutterBottom>
                       Line-Up
@@ -100,13 +100,13 @@ const Projects = () => {
                       target="_blank"
                       rel="noreferrer"
                       style={{
-                        textDecoration: "none",
-                        cursor: "pointer",
-                        color: "black",
-                        marginTop: "auto",
+                        textDecoration: 'none',
+                        cursor: 'pointer',
+                        color: 'black',
+                        marginTop: 'auto'
                       }}
                     >
-                      <BsLink size={32} style={{ marginTop: "auto" }} />
+                      <BsLink size={32} style={{ marginTop: 'auto' }} />
                     </a>
                   </CardContent>
                 </Card>

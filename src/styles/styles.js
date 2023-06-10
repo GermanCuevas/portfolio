@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 
 const styles = {
-    colorPrimary: {
-        color: "white",
-        fontWeight: 900,
-    }
-}
+  titlePresentation: {
+    color: 'white',
+    fontWeight: 900
+  }
+};
 
 export default styles;

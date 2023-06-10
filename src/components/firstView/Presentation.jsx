@@ -1,42 +1,36 @@
-import { Parallax } from "react-parallax";
-import img from "../../assets/01.jpg";
-import { Typography, Button } from "@mui/material";
-import styles from "../../styles/styles";
+import { Parallax } from 'react-parallax';
+import img from '../../assets/01.jpg';
+import { Typography, Button } from '@mui/material';
+import './presentation.css';
 
 const Presentation = () => {
   return (
     <>
-      <div style={{ height: "100vh" }}>
+      <div className="boxParallaxContainer">
         <Parallax
-          style={{ height: "100%", width: "100%" }}
+          style={{ height: '100%', width: '100%' }}
+          className="parallax"
           blur={{ min: -15, max: 15 }}
           bgImage={img}
           strength={500}
         >
-          <div
-            style={{
-              height: "100%",
-              textAlign: "center",
-              marginTop: "100px",
-              width: "100%",
-            }}
-          >
-            <Typography variant="h1" style={styles.colorPrimary}>
+          <div className="boxInfo">
+            <Typography variant="h1" id={'titleProyect'}>
               Soy Germán
             </Typography>
-            <Typography variant="h4" style={styles.colorPrimary}>
+            <Typography variant="h4" style={{ color: 'white' }}>
               Full Stack Developer
             </Typography>
             <a
               href="/GermanCuevas.pdf"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: 'none' }}
             >
               <Button
                 variant="contained"
                 color="secondary"
-                style={{ marginTop: "100px" }}
+                style={{ marginTop: '100px' }}
               >
                 Mi Curriculum
               </Button>
